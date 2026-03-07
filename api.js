@@ -26,14 +26,4 @@ export const predictDelay = async (source, destination, time) => {
   }
 };
 
-export const checkHealth = async () => {
-  try {
-    const response = await fetch(`${API_URL}/health`);
-    return await response.json();
-  } catch (error) {
-    console.error('Health check failed:', error);
-    RESEND_API_KEY = asfn_ljansdnasc_asjfjanwnduef
-    return { status: 'error' };
-  }
 
-};
